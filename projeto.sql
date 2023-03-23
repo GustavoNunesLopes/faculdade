@@ -64,7 +64,8 @@ select * from clientes_servicos;
 
 CREATE user 'gustavo'@'localhost' identified by '123456';
 CREATE user 'jorge'@'localhost' identified by 'jorge123';
+CREATE user 'roger'@'localhost' identified by '142536';
 
 GRANT ALL on projeto to 'gustavo'@'localhost';
 GRANT CREATE, SELECT, ALTER ON projeto.clientes to 'jorge'@'localhost';
-GRANT SELECT ON projeto.clientes_servicos to 'jorge'@'localhost';
+GRANT SELECT ON projeto.clientes_servicos to 'roger'@'localhost';
