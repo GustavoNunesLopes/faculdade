@@ -67,5 +67,8 @@ CREATE user 'jorge'@'localhost' identified by 'jorge123';
 CREATE user 'roger'@'localhost' identified by '142536';
 
 GRANT ALL on projeto to 'gustavo'@'localhost';
-GRANT CREATE, SELECT, ALTER ON projeto.clientes to 'jorge'@'localhost';
+GRANT CREATE, SELECT, INSERT, DELETE, ALTER ON projeto.clientes to 'jorge'@'localhost';
+GRANT CREATE, SELECT, INSERT, DELETE, ALTER ON projeto.servico to 'jorge'@'localhost';
+GRANT CREATE, SELECT, INSERT, DELETE, ALTER ON projeto.itens to 'jorge'@'localhost';
+GRANT CREATE, SELECT, INSERT, DELETE, ALTER ON projeto.pagamento to 'jorge'@'localhost';
 GRANT SELECT ON projeto.clientes_servicos to 'roger'@'localhost';
